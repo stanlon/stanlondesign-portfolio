@@ -1,0 +1,16 @@
+# Design / source files
+*.psd
+*.ai
+*.xd
+
+# Archives
+*.zip
+*.rar
+*.7z
+
+# OS junk
+.DS_Store
+
+# Large mockup folders
+**/PhotoShop_Mockup/
+
