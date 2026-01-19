@@ -1,0 +1,722 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  background: #ffffff;
+  position: relative;
+  padding: 0;
+	margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.8em;
+  font-weight: 300;
+  color: #000;
+  margin: 30px 0;
+}
+
+a {
+  color: #37abc8ff;
+}
+
+a:hover {
+  color: #216778ff;
+  text-decoration: none;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #37abc8ff;
+  border-color: #37abc8ff;
+}
+
+.btn-primary:hover {
+  background-color: #216778ff;
+  border-color: #216778ff;
+}
+
+strong {
+  font-weight: 600;
+  color: #333;
+}
+
+.content {
+  margin-top: 50px;
+  padding: 50px 0;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  margin: 30px 0;
+  border-bottom: 1px dashed #ddd;
+}
+
+/* ==========================================================
+  Navbar Styles - https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section1
+==========================================================*/
+.navbar {
+  color: white !important;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  transition: all 0.3s;
+}
+
+.navbar-default {
+  border: none !important;
+}
+
+.navbar-default .navbar-nav li a {
+  color:#ffffff;
+}
+
+.navbar-default .navbar-nav li a:hover {
+  background: white;
+  color: #000;
+}
+
+.navbar button {
+  color: inherit !important;
+}
+
+.navbar.compressed {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #ffffff;
+  color: #000000 !important;
+  /* box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1); */
+}
+
+.navbar-default .navbar-nav li a.compressed {
+  color:#000000;
+}
+
+.navbar-default .navbar-nav li a.compressed:hover {
+  background: rgba(0,0,0,0.8);
+  color: white;
+}
+
+.navbar-collapse {
+  border-top: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.navbar-brand {
+  width: 125px;
+  margin-top: -15px;
+}
+
+.navbar-brand img {
+  width: 100%;
+}
+
+.navbar-default .navbar-nav>.active>a {
+  color: #ffffff !important;
+  background: rgba(0,0,0,0.8) !important;
+}
+
+/* ==========================================================
+  Parallax Styles
+==========================================================*/
+section {
+	padding: 0;
+	margin: 0;
+	position: relative;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.parallax--container {
+	position: absolute;
+	clip: rect(0, auto, auto, 0);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -10;
+}
+
+.parallax {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.parallax--bg {
+  background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.container--huge {
+	height: 175vh;
+}
+
+.container--big {
+	height: 100vh;
+}
+
+.container--medium {
+	height: 60vh;
+}
+
+.container--small {
+	height: 40vh;
+}
+
+.container--random {
+	height: 452px;
+}
+
+/************* Parallax Backgrounds *************/
+.bg-1 {
+  background-image: url("../img/home.jpg");
+}
+
+.bg-2 {
+  background-image: url("../img/studying1.svg");
+}
+
+.bg-3 {
+  background-image: url("../img/spiral.jpg");
+}
+
+.bg-4 {
+  background-image: url("../img/pattern.svg");
+}
+
+.bg-5 {
+  background-image: url("../img/maze.svg");
+}
+
+.bg-6 {
+  background-image: url("../img/contact.jpg");
+}
+
+/* ==========================================================
+  Home Section Styles
+==========================================================*/
+.home {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  margin-top: -190px;
+}
+
+.home h1 {
+  color: white;
+  font-size: 6rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  padding: 0 25px;
+}
+
+.home p {
+  color: white;
+  font-size: 2.5rem;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  display: inline-block;
+  margin-top: 0px;
+  padding: 0 25px;
+}
+
+/* ==========================================================
+  About Section Styles
+==========================================================*/
+.about {
+  background: #ffffff;
+  overflow: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.about h2 {
+  text-align: center;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 25px;
+  font-size: 4.5rem;
+}
+
+.about-img {
+  text-align: center;
+}
+
+.about img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 50%;
+  margin: 6em auto 0;
+  box-shadow: 3px 6px 11px 0px #888888;
+}
+
+.about-txt p {
+  margin-top:0;
+  margin-bottom: 20px;
+  font-size: 1.15em;
+}
+
+.about-txt p span {
+  font-size: 1.5em;
+}
+
+.aboutBtn {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* ==========================================================
+  Title Section
+==========================================================*/
+.title-section {
+  text-align: center;
+  color: white;
+}
+
+.title-section h1 {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* ==========================================================
+  Skills Section
+==========================================================*/
+
+.skills {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  color: #000000;
+}
+
+.skill {
+  padding-bottom: 50px;
+  /* text-shadow: 2px 2px 4px #000000; */
+}
+
+.skill h2 {
+  padding-bottom: 10px;
+  /* box-shadow: 0px 7px 10px -5px #888888; */
+}
+
+.individual_skill {
+  display: inline-block;
+  background: rgb(238, 238, 238);
+  margin: 0 15px 15px 0;
+  padding: 10px 0;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px -5px #888888;
+  -webkit-transition: all .2s ease-in;
+  -moz-transition: all .2s ease-in;
+  -ms-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.individual_skill:hover {
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.6);
+  transform: translateY(-3px);
+}
+
+.skills img {
+  width: 50px;
+  height: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+  float: left;
+}
+
+.skills h4 {
+  float: right;
+  margin-right: 0px;
+  padding-top: 5px;
+  padding-right: 10px;
+}
+
+/*
+==========================================================
+  Portfolio Section
+==========================================================*/
+.portfolio {
+  background: #ffffff;
+  overflow: auto;
+  padding-top: 50px;
+}
+
+.project {
+  margin-bottom: 50px;
+  overflow: auto;
+}
+
+.project-img {
+  text-align: center;
+}
+
+.project-img img {
+  width: 100%;
+  /* border: solid 20px #eee; */
+}
+
+
+.project-text h2 {
+  text-align: center;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.project-text p {
+  line-height: 36px;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.project-details {
+  overflow: auto;
+  margin: 0;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.project-details h3 {
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+.project-details img {
+  width: 100%;
+}
+
+.project-details button {
+  margin-top: 25px;
+  padding: 5px 0;
+  width: 90%;
+}
+
+ul.project-tools {
+  list-style-type: none;
+  text-align: center;
+  padding-left: 0
+}
+
+ul.project-tools li {
+  color:white;
+  width: 50%;
+  float: left;
+}
+
+.HTML5_Color { background-color: #F16529; }
+.CSS_Color { background-color:#1B83BE; }
+.BOOTSTRAP_Color { background-color:#563E7C; }
+.JS_Color { background-color:#FDDA3E; }
+.JQUERY_Color { background-color:#1E78AB; }
+.PS_Color { background-color:#00C8FF; }
+.ATOM_Color { background-color:#89CE8A; }
+.WINDOWS_Color { background-color:#0074D5; }
+.GI_Color { background-color:#577EBF; }
+.GF_Color { background-color:#FF5252; }
+
+/* ==========================================================
+  Design Section
+==========================================================*/
+.designs {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.designs .thumbnail img {
+  max-width: 100%;
+}
+
+.designs .thumbnail {
+  padding: 0;
+}
+
+/*==========================================================
+  Contact Section
+==========================================================*/
+.contact h2 {
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 25px;
+  color: #ffffff;
+  font-size: 36px;
+}
+
+.contact .info p {
+  margin: 0;
+}
+
+.contact .icon-info {
+  text-align: center;
+  margin: 60px 0 20px 0;
+  padding-top: 10px;
+  display: block;
+}
+
+.contact .icon-info:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+.contact .icon-info .icon {
+  color: white;
+  font-size: 75px;
+}
+
+.contact .icon-info p {
+  margin-top: 0;
+  margin: 0;
+}
+
+.icon_title {
+  font-weight: bold;
+}
+
+.icon_text {
+  margin-left: 20px;
+}
+
+.contact .icon-info:hover .icon_text {
+  font-weight: bold;
+}
+
+
+.contact form {
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  background-color: rgba(244, 247, 248, 0.7);
+  margin: 10px 0 0 0;
+  padding: 10px;
+  border-radius: 15px;
+  color: rgba(0,0,0,0.7);
+}
+
+.contact form h3 {
+  margin: 0;
+  padding: 0 0 20px 0;
+  text-align: center;
+}
+
+.contact label {
+  display: block;
+  margin-bottom: 4px;
+  color: rgba(0,0,0,0.6);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  color: #000;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 5px 15px;
+  width: 100%;
+  background-color: rgba(255,255,255,0.7);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+input#address {
+  display: none !important;
+}
+
+.contact button {
+  padding: 5px 0px;
+  color: #FFF;
+  background-color: #4bc970;
+  font-size: 16px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 50%;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+
+/* Submit button spinner */
+#submit-btn {
+  position: relative;
+}
+
+#submit-btn .spinner {
+  display: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #fff;
+  border-top: 2px solid transparent;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  margin-left: 8px;
+}
+
+#submit-btn.loading .btn-text {
+  opacity: 0.6;
+}
+
+#submit-btn.loading .spinner {
+  display: inline-block;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/*==========================================================
+  Thanks Page
+==========================================================*/
+#thanks {
+  background: rgba(0,0,0,0.8);
+  color: #f4f7f8;
+}
+
+#thanks p {
+  color: #f4f7f8;
+}
+
+
+/*==========================================================
+  Project Documentation and Wireframe Templates
+==========================================================*/
+body.project_body {
+  background-color: #E4E9ED !important;
+  margin-top: 95px;
+}
+
+.template {
+  max-width: 1000px;
+  padding-bottom: 50px;
+}
+
+.template_image img {
+  max-width: 100%;
+}
+
+
+/* ==========================================================
+  CSS for screens that are 991px or less
+==========================================================*/
+@media screen and (max-width: 991px) {
+  .about h2 {
+    padding-top: 30px;
+    padding-bottom: 25px;
+  }
+
+  .about img {
+    margin: 0 auto;
+  }
+
+  .project-text h2 {
+    padding-top: 20px;
+  }
+
+  .contact h2 {
+    margin-top: 50px;
+  }
+}
+
+/* ==========================================================
+  CSS for screens that are 768px or less
+==========================================================*/
+@media screen and (max-width: 768px) {
+  .navbar {
+    background: rgba(0,0,0,0.8);
+  }
+
+  .navbar.compressed {
+    background: #ffffff;
+  }
+
+  .navbar-default .navbar-collapse {
+    margin-top: 10px;
+  }
+
+  .navbar-default .navbar-nav li a {
+    border-top: solid white 1px;
+  }
+
+  .navbar-default .navbar-nav li:last-child {
+    border-bottom: solid white 1px;
+  }
+
+  .navbar-default .navbar-nav>li>a:hover {
+    color: black;
+    background: #ddd;
+  }
+
+  .home {
+    margin-top: 0px;
+  }
+
+  .home h1 {
+    font-size: 4rem;
+    padding: 0;
+  }
+
+  .home p {
+    line-height: 0;
+    padding: 0;
+  }
+
+  .about h2 {
+    padding-top: 0;
+  }
+
+  .about-txt {
+    margin-top: 2em;
+  }
+
+  .process-img {
+    margin-bottom: 50px;
+  }
+
+  .portfolio {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .project-details {
+    margin-bottom: 25px;
+  }
+
+  .project-details button {
+    margin-bottom: 25px
+  }
+
+  .contact h2 {
+    margin-top: 50px;
+  }
+
+  .contact .disappear {
+    display: none;
+  }
+
+  body.project_body {
+    margin-top: 95px;
+    padding: 50px;
+  }
+
+}
