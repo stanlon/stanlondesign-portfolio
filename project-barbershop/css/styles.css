@@ -23,6 +23,10 @@ body p {
 /************************************
  Main Site Navigation Menu
  ************************************/
+.navbar {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 .navbar-dark .navbar-toggler {
   border: none;
   border-color: none;

@@ -36,6 +36,10 @@ body {
 /*************************
 Navigation Menu
 *************************/
+.navbar {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 .navbar-brand {
   font-family: 'Lobster', cursive;
 }
