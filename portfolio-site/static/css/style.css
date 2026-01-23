@@ -538,6 +538,14 @@ textarea {
   width: 100%;
 }
 
+form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  height: 180px;        /* fixed visible height */
+  overflow-y: auto;     /* scrollbar appears when needed */
+  resize: none;         /* prevents user from resizing */
+}
+
 input#address {
   display: none !important;
 }
@@ -585,6 +593,32 @@ input#address {
 
 @keyframes spin {
   to { transform: rotate(360deg); }
+}
+
+/*==========================================================
+  Footer Styles
+==========================================================*/
+.site-footer {
+  padding: 1.5rem 1rem;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+}
+
+.site-footer p {
+  color: #fff;
+  text-align: center;
+  display: inline;
+}
+
+.site-footer a {
+  color: #fff;
+  text-decoration: none;
+  display: inline;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
 }
 
 /*==========================================================

@@ -35,34 +35,5 @@ $(document).ready(function() {
     }
   });
 
-  //Contact Form (Formspree + free-tier redirect)
-  const $form = $("#contact-form");
-  if ($form.length) {
-    $form.on("submit", function (e) {
-      e.preventDefault();
-
-      const $btn = $("#submit-btn");
-      $btn.addClass("loading").prop("disabled", true);
-
-      fetch(this.action, {
-        method: "POST",
-        body: new FormData(this),
-        headers: { "Accept": "application/json" }
-      })
-      .then(response => {
-        if (response.ok) {
-          window.location.href = "/thanks.php";
-        } else {
-          alert("Something went wrong. Please try again.");
-          $btn.removeClass("loading").prop("disabled", false);
-        }
-      })
-      .catch(() => {
-        alert("Network error. Please try again.");
-        $btn.removeClass("loading").prop("disabled", false);
-      });
-    });
-  }
-
 });
 
