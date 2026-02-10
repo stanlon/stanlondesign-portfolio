@@ -633,22 +633,123 @@ input#address {
   color: #f4f7f8;
 }
 
+/*==========================================================
+  Project Documentation
+==========================================================*/
+/* Replace Bootstrap container behavior */
+.template.docs {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 16px 50px;
+}
+
+/* Header spacing */
+.docs-header h1 {
+  margin: 0 0 1.5rem;
+}
+
+/* ==========================================================
+   Flexbox layout for documentation cards
+========================================================== */
+.docs-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+/* Card styling */
+.doc-card {
+  flex: 1 1 320px;        /* responsive: tries to be ~320px wide */
+  /* border: 2px solid #111; */
+  border-radius: 12px;
+  padding: 1.25rem;
+  /* background: #fff; */
+}
+
+/* Make the big “Detailed Pages…” section span full width */
+.doc-card--full {
+  flex-basis: 100%;
+}
+
+/* Typography cleanup */
+.doc-card h2 {
+  margin: 0 0 0.75rem;
+}
+
+.doc-card p {
+  margin: 0 0 0.85rem;
+  line-height: 1.6;
+}
+
+.doc-card ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.doc-card li {
+  margin: 0 0 0.5rem;
+}
+
+/* ==========================================================
+   Flowchart section
+========================================================== */
+.flowchart img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-top: 0.75rem;
+  border-radius: 10px;
+}
 
 /*==========================================================
-  Project Documentation and Wireframe Templates
+  Wireframe Templates
 ==========================================================*/
 body.project_body {
   background-color: #E4E9ED !important;
-  margin-top: 95px;
+  margin-top: 65px;
 }
 
-.template {
-  max-width: 1000px;
-  padding-bottom: 50px;
+/* ================================
+   Wireframes Flexbox Layout
+================================== */
+
+.template.wireframes {
+  max-width: 1200px;      /* keep your existing width goal */
+  margin: 0 auto;         /* center like Bootstrap container */
+  padding: 0 16px 50px;   /* side padding + bottom space */
 }
 
-.template_image img {
-  max-width: 100%;
+.wireframe-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin-bottom: 2.5rem;
+}
+
+.wireframe-card {
+  flex: 1 1 260px;        /* responsive base width */
+  max-width: 180px;       /* prevent huge stretching */
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.wireframe-card h3 {
+  margin: 0 0 0.75rem;
+}
+
+.wireframe-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Optional: clean spacing for the section headings */
+.template.wireframes h2 {
+  margin: 2rem 0 1rem;
 }
 
 

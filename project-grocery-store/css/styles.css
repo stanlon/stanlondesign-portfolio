@@ -165,3 +165,115 @@ Items Page
 
   .blue { color: blue; }
   .red { color: red; }
+
+  /* ==========================================================
+   Page base (optional — keep if you already use it)
+========================================================== */
+body.project_body {
+  background-color: #E4E9ED;
+  margin-top: 115px;
+}
+
+/* Replace Bootstrap container behavior */
+.template.docs {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 16px 50px;
+}
+
+/* Header spacing */
+.docs-header h1 {
+  margin: 0 0 1.5rem;
+}
+
+/* ==========================================================
+   Flexbox layout for documentation cards
+========================================================== */
+.docs-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+/* Card styling */
+.doc-card {
+  flex: 1 1 320px;
+  padding: 1.25rem;
+}
+
+/* Typography */
+.doc-card h2 {
+  margin: 0 0 0.75rem;
+}
+
+.doc-card p {
+  margin: 0 0 0.85rem;
+  line-height: 1.6;
+}
+
+.doc-card ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.doc-card li {
+  margin: 0 0 0.5rem;
+}
+
+/* ==========================================================
+   Flowchart responsiveness
+========================================================== */
+.flowchart img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-top: 0.75rem;
+}
+
+  /* ==========================================================
+   Wireframes – Flexbox Layout
+========================================================== */
+
+.template.wireframes {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px 50px;
+}
+
+/* Headings spacing */
+.template.wireframes h1 {
+  margin: 0 0 1rem;
+}
+
+.template.wireframes h2 {
+  margin: 2rem 0 1rem;
+}
+
+/* Flex container */
+.wireframe-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-bottom: 2.5rem;
+}
+
+/* Card */
+.wireframe-card {
+  flex: 1 1 260px;
+  max-width: 180px;
+  padding: 1rem;
+}
+
+.wireframe-card h3 {
+  margin: 0 0 0.75rem;
+}
+
+/* Responsive images */
+.wireframe-card img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
